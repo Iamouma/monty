@@ -3,10 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdeff.h>
-#include <string.h>
-
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -41,8 +37,8 @@ typedef struct instruction_s
 
 int main(int argc, char *argv[]);
 stack_t *create_stack(void);
-
-
+void errors(unsigned int line_n, int err_n);
+void pint(stack_t **stack, unsigned int l_count);
 
 
 
