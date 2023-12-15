@@ -4,17 +4,17 @@
 #include "monty.h"
 /**
  * pop - pop the top element of the stack.
- * @stack: stack given.
- * @l_count: line for error messages.
- * Return: void:
+ * @stack: double pointer to head of stack given.
+ * @line_count: line for error messages.
+ * Return: 0
  */
-void pop(stack_t **stack, unsigned int l_count)
+void pop(stack_t **stack, unsigned int line_count)
 {
 	stack_t *s = NULL;
 
 	if (!stack || !*stack)
 	{
-		fprintf(stderr, "L%u: can't pop an empty stack\n", l_count);
+		fprintf(stderr, "L%u: can't pop an empty stack\n", line_count);
 		exit(EXIT_FAILURE);
 	}
 
