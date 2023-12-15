@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/*
+/**
  * swap - swaps the top two elements in the stack.
  * @stack: double pointer to head of the stack.
  * @line_count: number of lines swapped.

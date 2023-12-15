@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/*
+/**
  * sub - substracts the top two elements of the stack.
  * @stack: double pointer to the head of the stack.
  * @line_count: number of lines.
  * Return: 0
  */
-void sub(stack_t **stack, unsigned int line count)
+void sub(stack_t **stack, unsigned int line_count)
 {
 	int res;
 

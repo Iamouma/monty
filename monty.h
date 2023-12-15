@@ -48,10 +48,26 @@ void swap(stack_t **stack, unsigned int line_count);
 void add(stack_t **stack, unsigned int line_count);
 void nop(stack_t **stack, unsigned int line_count);
 int main(int argc, char **argv);
-void sub(stack_t **stack, unsigned int line count);
+void sub(stack_t **stack, unsigned int line_count);
 void div(stack_t **stack, unsigned int line_count);
 void mul(stack_t **stack, unsigned int line_counter);
 void mod(stack_t **stack, unsigned int line_count);
+void pchar(stack_t **stack, unsigned int line_count);
+void rot1(stack_t **stack, unsigned int line_count);
+void rotr(stack_t **stack, unsigned int line_count);
+void opcodes(stack_t **stack, char *opc, unsigned int line_count);
+stack_t *new_node(int i);
+int main(int argc, char **argv);
+void open_error(char *file);
+void usage_error(void);
+
+
+
+
+
+
+
+
 
 
 #endif
