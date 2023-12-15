@@ -4,17 +4,17 @@
 #include <string.h>
 /**
  * add - adds the first two nodes of the stack.
- * @stack: stack given.
- * @l_count: line counter.
+ * @stack: double pointer to head of the stack.
+ * @line_count: line counter.
  * Return: 0
  */
-void add(stack_t **stack, unsigned int l_count)
+void add(stack_t **stack, unsigned int line_count)
 {
 	int result;
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", l_count);
+		fprintf(stderr, "L%d: can't add, stack too short\n", line_count);
 		exit(EXIT_FAILURE);
 	}
 
