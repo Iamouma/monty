@@ -39,6 +39,7 @@ typedef struct instruction_s
 stack_t *new_node(int i);
 void push(stack_t **stack, unsigned int line_count);
 void pall(stack_t **stack, unsigned int line_count);
+void pint(stack_t **stack, unsigned int line_count);
 
 
 
