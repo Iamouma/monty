@@ -5,16 +5,22 @@
  * @argv: arguments passed.
  * Return: 0 if successful else failure.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
+	char *len;
+	stack_t *stack;
+
+	stack = create_stack();
+
+	len = argv[1];
+
 	if (argc != 2)
 	{
-		usage_error();
+		fprintf(stderr, "USAGE: monty file\n");
+		exit(EXIT_FAILURE);
 	}
-	else
-	{
-		execute(argv[1]);
-	}
+	read_file(len, &stack);
 
 	exit(EXIT_SUCCESS);
 }
+
