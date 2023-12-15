@@ -47,7 +47,7 @@ void swap(stack_t **stack, unsigned int line_count);
 void add(stack_t **stack, unsigned int line_count);
 void nop(stack_t **stack, unsigned int line_count);
 void sub(stack_t **stack, unsigned int line_count);
-void div(stack_t **stack, unsigned int line_count);
+void _div(stack_t **stack, unsigned int line_count);
 void mul(stack_t **stack, unsigned int line_counter);
 void mod(stack_t **stack, unsigned int line_count);
 void pchar(stack_t **stack, unsigned int line_count);
@@ -58,7 +58,6 @@ void error(unsigned int line_count, int error_number);
 void read_file(char *path, stack_t **stack);
 stack_t *create_stack(void);
 int main(int argc, char *argv[]);
-
 
 
 

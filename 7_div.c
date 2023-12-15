@@ -3,12 +3,12 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * div - divides the second top elements of the stack.
+ * _div - divides the second top elements of the stack.
  * @stack: double pointer to the head of the stack.
  * @line_count: number of lines.
  * Return: 0
  */
-void div(stack_t **stack, unsigned int line_count)
+void _div(stack_t **stack, unsigned int line_count)
 {
 	int res;
 

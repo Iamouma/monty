@@ -10,15 +10,28 @@
  */
 void push(stack_t **stack, unsigned int line_count)
 {
-	stack_t *new = NULL;
+	stack_t *new = (stack_t *)malloc(sizeof(stack_t));
 	(void)line_count;
 
-	new = createNode(value);
-
-	new->next = *stack;
-	if (*stack != NULL)
-		(*stack)->prev = new;
+	if (new == NULL)
+	{
+		fprintf(stderr, "Error: malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+	new->n = data;
+	if (*stack == NULL)
+	{
+		new->next = NULL;
+	}
+	else
+	{
+		new->next = *stack;
+	}
+	new->prev = NULL;
 	*stack = new;
+
+	if (new->next != NULL)
+		new->next->prev = new;
 }
 
 /**
