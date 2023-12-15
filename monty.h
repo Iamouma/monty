@@ -35,15 +35,8 @@ typedef struct instruction_s
 
 
 
-int main(int argc, char *argv[]);
-stack_t *create_stack(void);
-void errors(unsigned int line_n, int err_n);
-void pint(stack_t **stack, unsigned int l_count);
 
-
-
-
-
+stack_t *new_node(int i);
 
 
 
