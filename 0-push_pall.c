@@ -10,15 +10,15 @@
  */
 void push(stack_t **stack, unsigned int line_count)
 {
-	stack_t *n =NULL;
+	stack_t *new = NULL;
 	(void)line_count;
 
-	n = createNode(value);
+	new = createNode(value);
 
-	n->next = *stack;
+	new->next = *stack;
 	if (*stack != NULL)
-		(*stack)->prev = n;
-	*stack = n;
+		(*stack)->prev = new;
+	*stack = new;
 }
 
 /**
