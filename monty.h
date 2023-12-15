@@ -47,7 +47,7 @@ void pop(stack_t **stack, unsigned int line_count);
 void swap(stack_t **stack, unsigned int line_count);
 void add(stack_t **stack, unsigned int line_count);
 void nop(stack_t **stack, unsigned int line_count);
-
+int main(int argc, char **argv);
 
 
 
