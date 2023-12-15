@@ -48,10 +48,10 @@ void swap(stack_t **stack, unsigned int line_count);
 void add(stack_t **stack, unsigned int line_count);
 void nop(stack_t **stack, unsigned int line_count);
 int main(int argc, char **argv);
-
-
-
-
+void sub(stack_t **stack, unsigned int line count);
+void div(stack_t **stack, unsigned int line_count);
+void mul(stack_t **stack, unsigned int line_counter);
+void mod(stack_t **stack, unsigned int line_count);
 
 
 #endif
