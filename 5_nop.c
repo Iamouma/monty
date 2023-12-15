@@ -1,12 +1,12 @@
 #include "monty.h"
 /**
  * nop - does nothing to the stack.
- * @stack: stack given.
- * @l_count: does not count anything.
+ * @stack: double pointer to the head of stack.
+ * @line_count: does not count anything.
  * Return: 0
  */
-void nop(stack_t **stack, unsigned int l_count)
+void nop(stack_t **stack, unsigned int line_count)
 {
 	(void) stack;
-	(void) l_count;
+	(void) line_count;
 }
