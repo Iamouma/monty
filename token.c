@@ -25,7 +25,7 @@ int get_tokens(char *line, stack_t **stack, unsigned int line_count)
 					errors(line_count - 1, 2);
 					return (-1);
 				}
-				data = stro1(token, NULL, 10);
+				data = strtol(token, NULL, 10);
 				func(stack, line_count);
 			}
 			else

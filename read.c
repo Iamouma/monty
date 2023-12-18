@@ -1,5 +1,6 @@
 #include "monty.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * read_file - opens and reads monty bytecode file
  * @path: path to monty bytecode
@@ -11,7 +12,7 @@ void read_file(char *path, stack_t **stack)
 {
 	size_t len = 0;
 	ssize_t tmp;
-	char *c = NULL;
+	char *line = NULL;
 	int n = 1;
 
 	FILE *file = fopen(path, "r");
@@ -22,10 +23,7 @@ void read_file(char *path, stack_t **stack)
 		exit(EXIT_FAILURE);
 	}
 	
-	while ((tmp = getline(&c, &len, file)) != -1)
-	{
-		get_tokens(c, stack, ++n);
-	}
-	free(c);
+	
+	free(line);
 	fclose(file);
 }
