@@ -53,13 +53,12 @@ void mod(stack_t **stack, unsigned int line_count);
 void pchar(stack_t **stack, unsigned int line_count);
 void rot1(stack_t **stack, unsigned int line_count);
 void rotr(stack_t **stack, unsigned int line_count);
-void opcodes(stack_t **stack, char *opc, unsigned int line_count);
-void error(unsigned int line_count, int error_number);
+void errors(unsigned int line_count, int error_number);
 void read_file(char *path, stack_t **stack);
 stack_t *create_stack(void);
 int main(int argc, char *argv[]);
-
-
+int get_tokens(char *line, stack_t **stack, unsigned int line_count);
+void (*opcodes(char *opc))(stack_t **stack, unsigned int line_count);
 
 
 #endif

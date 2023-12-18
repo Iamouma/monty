@@ -3,12 +3,12 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * error - handles errors.
+ * errors- handles errors.
  * @line_count: number of lines.
  * @error_number: number with the error.
  * Return: 0
  */
-void error(unsigned int line_count, int error_number)
+void errors(unsigned int line_count, int error_number)
 {
 	if (error_number == 1)
 	{
