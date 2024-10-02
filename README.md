@@ -1,1 +1,1 @@
-monty Stacks LIFO and FIFO
+Monty Stacks LIFO and FIFO
